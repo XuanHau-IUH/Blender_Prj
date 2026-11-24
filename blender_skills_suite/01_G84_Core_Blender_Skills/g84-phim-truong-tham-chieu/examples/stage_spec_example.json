@@ -1,0 +1,128 @@
+{
+  "scene_name": "G84_Sample_Stage",
+  "fps": 24,
+  "resolution": [1280, 720],
+  "resolution_pct": 100,
+  "frame_start": 1,
+  "frame_end": 73,
+  "world": {
+    "stage_type": "room_l_shape",
+    "width_m": 6.0,
+    "depth_m": 7.0,
+    "height_m": 3.2,
+    "floor_color": [0.22, 0.22, 0.25],
+    "wall_color": [0.46, 0.44, 0.40]
+  },
+  "lighting": {
+    "preset": "studio_3point",
+    "target_loc": [0.0, 0.0, 1.5],
+    "key_energy": 300.0
+  },
+  "props": [
+    {
+      "name": "Ban_Tra",
+      "kind": "box",
+      "dims": [1.2, 0.7, 0.75],
+      "location": [0.0, 0.2, 0.0],
+      "color": [0.48, 0.32, 0.20],
+      "rot_z_deg": 0.0,
+      "snap_to_ground": true
+    },
+    {
+      "name": "Ghe_A",
+      "kind": "box",
+      "dims": [0.5, 0.5, 0.45],
+      "location": [-0.9, 0.2, 0.0],
+      "color": [0.35, 0.30, 0.25],
+      "rot_z_deg": 90.0,
+      "snap_to_ground": true
+    }
+  ],
+  "characters": [
+    {
+      "name": "Danh",
+      "height_m": 1.75,
+      "location": [-1.2, -0.5, 0.0],
+      "facing_deg": 65.0,
+      "color_id": [0.82, 0.24, 0.22],
+      "use_rigify": false,
+      "look_at": "Ba_Tu",
+      "keyframes": [
+        {
+          "frame": 1,
+          "location": [-1.2, -0.5, 0.0],
+          "facing_deg": 65.0
+        },
+        {
+          "frame": 37,
+          "location": [-0.7, -0.1, 0.0],
+          "facing_deg": 80.0
+        },
+        {
+          "frame": 73,
+          "location": [-0.65, -0.05, 0.0],
+          "facing_deg": 85.0
+        }
+      ]
+    },
+    {
+      "name": "Ba_Tu",
+      "height_m": 1.62,
+      "location": [1.0, 0.3, 0.0],
+      "facing_deg": -105.0,
+      "color_id": [0.22, 0.55, 0.82],
+      "use_rigify": false,
+      "look_at": "Danh",
+      "keyframes": [
+        {
+          "frame": 1,
+          "location": [1.0, 0.3, 0.0],
+          "facing_deg": -105.0
+        },
+        {
+          "frame": 73,
+          "location": [0.95, 0.25, 0.0],
+          "facing_deg": -95.0
+        }
+      ]
+    }
+  ],
+  "beats": [
+    "Danh bước tới bàn trà đối diện Bà Tư",
+    "Bà Tư nhìn thẳng vào Danh giữ im lặng"
+  ],
+  "shots": [
+    {
+      "shot": 10,
+      "beats": [1],
+      "frame_start": 1,
+      "frame_end": 37,
+      "size": "MS",
+      "lens_mm": 35.0,
+      "subject": ["Danh", "Ba_Tu"],
+      "look_at": "Danh",
+      "side": 1.0,
+      "angle_deg": 30.0,
+      "height": "eye",
+      "shift_y": 0.05,
+      "handheld_strength": 0.006,
+      "why": "Cảnh đôi giới thiệu vị trí đứng của Danh và Bà Tư qua bàn trà"
+    },
+    {
+      "shot": 20,
+      "beats": [2],
+      "frame_start": 38,
+      "frame_end": 73,
+      "size": "MCU",
+      "lens_mm": 50.0,
+      "subject": ["Danh"],
+      "look_at": "Danh",
+      "side": 1.0,
+      "angle_deg": 20.0,
+      "height": "eye",
+      "shift_y": 0.02,
+      "handheld_strength": 0.005,
+      "why": "Cận trung bắt biểu cảm Danh khi dừng lại trước bàn"
+    }
+  ]
+}

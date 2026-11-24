@@ -1,0 +1,16 @@
+# Blender backup files
+*.blend1
+*.blend2
+*.blend@
+
+# Caches and databases
+*.db
+optix7cache.db
+initial_optix7cache.db
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
